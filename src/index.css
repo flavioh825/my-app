@@ -16,24 +16,36 @@ a { text-decoration: none; font-weight: bold; }
 
 /* small smartphones */
 @media screen and (max-width: 480px) {
-  .nav{ display: none; flex-direction: column; }
+  .header { display: flex; flex-direction: column; }
+
+  .nav{ display: none; flex-direction: column; order: 2;}
     .nav a { width: 100%; }
+
+  .buttonMob { order: 1; text-align: right; padding: 5px 5% 5px 0; }
 }
 
 /* medium smartphones */
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .nav{ display: none; flex-direction: column; }
+  .header { display: flex; flex-direction: column; }
+
+  .nav{ display: none; flex-direction: column; order: 2;}
     .nav a { width: 100%; }
+
+  .buttonMob { order: 1; text-align: right; padding: 5px 5% 5px 0; }
 }
 
 /* large smartphones and small notebooks */
 @media screen and (min-width: 769px) and (max-width: 1199px) {
   .nav{ display: flex; }
     .nav a { width: 25%; }
+
+  .buttonMob { display: none; }
 }
 
 /* Xlarge screens */
 @media screen and (min-width: 1200px) {
   .nav{ display: flex; }
     .nav a { width: 25%; }
+
+  .buttonMob { display: none; }
 }
